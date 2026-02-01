@@ -5,6 +5,9 @@ export default defineConfig({
   site: "https://efimish.github.io",
   base: "/classless.css",
   trailingSlash: "always",
+  build: {
+    inlineStylesheets: "never",
+  },
   vite: {
     build: {
       rollupOptions: {
